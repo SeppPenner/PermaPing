@@ -6,6 +6,7 @@
 #define MyAppPublisher "Hämmer Electronics"
 #define MyAppURL "www.softwareload24.de.tl"
 #define MyAppExeName "PermaPing.exe"
+#define MyPath "F:\TODO\C# und VB\PermaPing"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
@@ -24,10 +25,10 @@ AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
-LicenseFile=C:\Users\tim\Desktop\PermaPing\PermaPing\bin\Debug\License.txt
-OutputDir=C:\Users\tim\Desktop\PermaPing\Setup
+LicenseFile={#MyPath}\PermaPing\bin\Debug\License.txt
+OutputDir={#MyPath}\Setup
 OutputBaseFilename=PermaPing-Setup
-SetupIconFile=C:\Users\tim\Desktop\PermaPing\PermaPing\Wifi.ico
+SetupIconFile={#MyPath}\PermaPing\Wifi.ico
 Compression=lzma
 SolidCompression=yes
 
@@ -40,10 +41,10 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
 
 [Files]
-Source: "C:\Users\tim\Desktop\PermaPing\PermaPing\bin\Debug\PermaPing.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\tim\Desktop\PermaPing\PermaPing\bin\Debug\Connected.ico"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\tim\Desktop\PermaPing\PermaPing\bin\Debug\License.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\tim\Desktop\PermaPing\PermaPing\bin\Debug\NotConnected.ico"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyPath}\PermaPing\bin\Debug\PermaPing.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyPath}\PermaPing\bin\Debug\Connected.ico"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyPath}\PermaPing\bin\Debug\License.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyPath}\PermaPing\bin\Debug\NotConnected.ico"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
