@@ -2,7 +2,7 @@ PermaPing
 ====================================
 
 PermaPing is an executable to check your computer's internet connection.
-The executable was written and tested in .Net 4.8.
+The executable was written and tested in .Net 5.0.
 
 [![Build status](https://ci.appveyor.com/api/projects/status/b345skpgjv4un1ff?svg=true)](https://ci.appveyor.com/project/SeppPenner/permaping)
 [![GitHub issues](https://img.shields.io/github/issues/SeppPenner/PermaPing.svg)](https://github.com/SeppPenner/PermaPing/issues)
@@ -15,6 +15,4 @@ The executable was written and tested in .Net 4.8.
 Change history
 --------------
 
-* **Version 1.0.1.0 (2019-10-27)** : Updated nuget packages, added GitVersionTask.
-* **Version 1.0.0.1 (2019-05-06)** : Updated .Net version to 4.8.
-* **Version 1.0.0.0 (2017-03-17)** : 1.0 release.
+See the [Changelog](https://github.com/SeppPenner/PermaPing/blob/master/Changelog.md).
