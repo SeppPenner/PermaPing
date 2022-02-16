@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="PingState.cs" company="Hämmer Electronics">
 //   Copyright (c) All rights reserved.
 // </copyright>
@@ -7,21 +7,20 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace PermaPing
+namespace PermaPing;
+
+/// <summary>
+/// The ping state.
+/// </summary>
+public enum PingState
 {
     /// <summary>
-    /// The ping state.
+    /// The success ping state.
     /// </summary>
-    public enum PingState
-    {
-        /// <summary>
-        /// The success ping state.
-        /// </summary>
-        Success,
+    Success,
 
-        /// <summary>
-        /// The fail ping state.
-        /// </summary>
-        Fail
-    }
+    /// <summary>
+    /// The fail ping state.
+    /// </summary>
+    Fail
 }
