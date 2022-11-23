@@ -74,7 +74,7 @@ public partial class EmptyForm : Form
     private void InitializeBackgroundWorker()
     {
         this.worker = new BackgroundWorker();
-        this.worker.DoWork += this.Ping;
+        this.worker.DoWork += this.Ping!;
         this.worker.RunWorkerAsync();
     }
 
